@@ -16,7 +16,7 @@ var tailSize = 20;
 var speed = 2; //** Kígyó sebessége
 var difficulty = 4; //** Kígyó növekedési sebessége
 var pa = 0; //** Personal Assesment
-var zeroes = 0; // Nullákra járó pont
+var zeroes = 0; //** Nullákra járó pont
 var ones = 1; //** Egyesekre járó pont
 var mentorBoost = 10; //** Mentor boost
 var rnd = 0;
@@ -148,7 +148,7 @@ function draw() {
       }, 800);
     }
 
-    pa = pa + value;
+    pa += value;
     logo.destroy();
     setTimeout(function () {
       logo = createSprite(randomNumber(50, 350), randomNumber(50, 350));
